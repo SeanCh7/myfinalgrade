@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+  background-color: darkslategray;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#HeaderBox {
+  background-color: darkslategray;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#HeaderBox h1 {
+  font-size: 50px;
+  display: block;
+  background-color: rgb(39, 66, 66);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel {
+  background-color: rgb(39, 66, 66);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel2 {
+  background-color: rgb(36, 57, 57);
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 300px;
+}
+
+#searchbox > div, #searchbox > input {
+  display: inline-block;
+  margin: 10px;
+}
+
+#classpanels {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.panel2 > ul {
+  list-style-type: none;
+  padding: 3px;
+}
+
+.panel2 > ul > li {
+  padding: 10px;
+  display:  block;
+}
+
+.panel2 > ul > li:hover {
+  padding: 10px;
+  display:  block;
+  background-color: rgb(39, 66, 66);
+}
+
+/* Phone */
+@media (min-width: 0px) and (max-width: 767px) {
+  #classpanels {
+    grid-template-columns: 1fr;
+  }
+
+  #HeaderBox h1 {
+    font-size: 25px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  #classpanels {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #HeaderBox h1 {
+    font-size: 40px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #classpanels {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #HeaderBox h1 {
+    font-size: 50px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  #classpanels {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #HeaderBox h1 {
+    font-size: 60px;
+  }
+}
